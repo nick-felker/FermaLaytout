@@ -1,0 +1,181 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("/public/images/backgroundImage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    font-family: 'Montserrat', sans-serif;
+}
+.header{
+    padding: 76px 0px 71px 112px;
+}
+.main_content_offer_block{
+    padding-top: 40px;
+}
+.main_content_offer_block_title{
+    font-weight: 700;
+    font-size: 48px;
+    width: 550px;
+}
+.main_content_image_block_three_circles{
+    position: absolute;
+    right: 130px;
+    padding-top: 0px;
+    z-index: -1;
+}
+
+.main_content_image_block_phone_image{
+    
+}
+.main_content_offer_block_offerlist{
+    margin-top: 52px;
+    margin-bottom: 42px;
+    font-weight: 500;
+    font-size: 24px;
+    width: 480px;
+    padding-left: 20px;
+}
+.main_content{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px 0px 100px;
+}
+.main_content_offer_iphoneButton{
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+.main_content_offer_iphoneButton:hover{
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.main_content_offer_under_iphone_button_text{
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 17px;
+    color: #919ca0;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 112px 81px 100px;
+}
+.footer_text{
+    font-size: 24px;
+    font-weight: 500;
+}
+.footer_navigation_block_element{
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    margin-right: 16px;
+}
+.footer_navigation_block_element:last-child{
+    margin-right: 0px;
+}
+.footer_navigation_block_element:hover{
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.footer_navigation_block_element:hover{
+
+}
+
+/*media*/
+@media (max-width: 1500px) {
+    .main_content{
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+    .main_content_image_block_three_circles{
+        right: 0px;
+        transform: translate(-50%, -20%);
+        left: 50%;
+        margin-top: 370px;
+    }
+    .main_content_offer_block{
+        margin-left: 100px;
+        margin-bottom: 200px;
+    }
+    .main_content{
+        display: unset;
+    }
+    .footer{
+        margin-top: 100px;
+    }
+    .main_content_image_block{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (max-width: 900px) {
+    .footer{
+        flex-direction: column;
+        padding: 0px;
+        margin-bottom: 50px;
+    }
+    .footer_text{
+        margin-bottom: 50px;
+    }
+    .main_content_offer_block{
+        margin-left: 50px;
+    }
+    .header{
+        padding: 50px 0px 70px 50px;
+    }
+    
+}
+@media (max-width: 600px) {
+    .main_content_image_block_phone_image{
+        width: 360px;
+        height: 325px;
+    }
+    .main_content_image_block_three_circles{
+        width: 296px;
+        height: 346px;
+    }
+    .main_content_offer_block{
+        margin-bottom: 150px;
+        margin-left: 20px;
+    }
+    .main_content_image_block_three_circles{
+        transform: translate(-50%, -45%);
+    }
+    .main_content_offer_block_title{
+        font-size: 24px;
+        width: 400px;
+    }
+    .header{
+        padding: 30px 0px 0px 20px;
+    }
+    .main_content{
+        margin-left: 100px;
+    }
+    .main_content_offer_block_offerlist{
+        font-size: 18px;
+        width: 320px;
+    }
+    .main_content_offer_under_iphone_button_text{
+        font-size: 16px;
+    }
+    .footer_text{
+        font-size: 14px;
+    }
+}
+@media (max-width: 400px) {
+    .main_content_offer_block_title{
+        width: 320px;
+    }
+    .main_content_offer_block{
+        margin-left: 10px;
+    }
+}
